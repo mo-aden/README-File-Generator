@@ -21,7 +21,7 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
   if (license !== "NONE") {
     return `## License
-    This project is licensed under ${license}`;
+    This Application is licensed under ${license}`;
   }
   return "";
 }
@@ -53,6 +53,8 @@ function generateMarkdown(data) {
   Run this command to test/run the application = ${data.usage} 
 
   ##Licence
+
+
   ${renderLicenseSection(data.license)}
   ${renderLicenseLink(data.license)}
   ${renderLicenseBadge(data.license)}\n
