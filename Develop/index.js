@@ -44,11 +44,6 @@ const questions = [
     name: "GitHub",
     message: "What is your GitHub username?",
   },
-  {
-    type: "input",
-    name: "fileName",
-    message: "Enter the name of the README file to be generated?",
-  },
 ];
 
 // TODO: Create a function to write README file
@@ -61,10 +56,8 @@ function init() {
   inquirer.prompt(questions).then((response) => {
     console.log(`Generating README file ...`);
 
-    const readmeFileName = response.fileName;
-
     // writeToFile(response.fileName.md, generateMarkdown({ ...response }));
-    writeToFile("readmeFileName.md", generateMarkdown({ ...response }));
+    writeToFile("README.md", generateMarkdown({ ...response }));
   });
 }
 
