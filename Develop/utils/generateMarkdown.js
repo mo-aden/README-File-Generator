@@ -41,7 +41,6 @@ function generateMarkdown(data) {
   * [Installation](#Installation)
   * [Testing](#Testing) 
   * [License](#License)
-  * [Contributions](#Contributions)
   * [Questions](#Questions)
 
   
@@ -52,16 +51,13 @@ function generateMarkdown(data) {
   ## Testing
   Run this command to test/run the application = ${data.usage} 
 
-  ##Licence
+
 
 
   ${renderLicenseSection(data.license)}
   ${renderLicenseLink(data.license)}
   ${renderLicenseBadge(data.license)}\n
 
-
-  ## Contributions
-  N/A
 
 
   ## Questions
